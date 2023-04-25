@@ -183,4 +183,35 @@ form fieldset label{
 }
 
 
+@media screen and (max-width: 740px) {
+
+
+    .right-side{
+        display: none;
+    }
+
+    .left-side{
+        width: auto;
+
+    }
+
+    fieldset{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 15%;
+        
+    }
+
+    .remember-div{
+        font-size: smaller;
+    }
+
+    form{
+        top: 7%;
+        width: auto;
+    }
+
+}
+
 
