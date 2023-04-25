@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>camp.in</title>
+</head>
+<body>
+    <main>
+        <div class="left-side">
+            <img src="images/logo.svg" alt="logomarca" class="logo">
+            
+            <form action="POST">
+                <fieldset>
+                    <legend></legend>
+                    <h1><img src="images/log-in.svg" alt=""><span> Faça seu login</span></h1>
+                    <p>Entre com suas informações de cadastro</p>
+                    <br>
+
+                    <label for="user-email" >E-mail</label>
+                    
+                    <input id="user-email" type="email" placeholder="Digite seu e-mail" required>
+
+                    <br>
+
+                    <label for="user-password">Senha</label>
+                    <input id="user-password" type="password" placeholder="Digite sua senha" required>
+                    <br>
+                    <div class="remember-div">
+                        <div class="remember-label">
+                            <input id="remember" type="checkbox" >
+                            <label for="remember"></label>
+                            <p>Lembre-me</p>
+                        </div> 
+
+                        <a href="" id="forget-pass">Esqueci minha senha</a>
+                    </div>
+                    <br>
+                    <input class="login-btn" type="button" value="ENTRAR">
+                    <br>
+                    <div class="register">
+                        <p>Não tem uma conta? <a href="">Registre-se</a></p>
+                    </div>    
+                </fieldset>
+            </form>
+        </div>
+        
+        <div class="right-side">
+            <img src="images/side-image.jpg" alt="">
+        </div>
+    </main>
+
+</body>
+</html>

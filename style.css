@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    width: auto;  
+    height: 100vh;
+    background-color: #191816;
+    font-family: 'Roboto', sans-serif;
+    color: #AFB6C2
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+form{
+    position: relative;
+    top: 15%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    padding-left: 20%;
+    padding-right: 15%;
+    padding-bottom: 17%;
+
+    border: none;
+    background-color: #24221F;
+}
+
+fieldset p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+fieldset h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#user-email{
+    height: 60px;
+    width: auto;
+    padding:0px 2.65em;
+    
+    border: 1px solid #ccc;
+    
+    font-size: medium;
+    background-image: url('images/mail.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+form fieldset label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+
+#user-email:focus{
+    background-image: url('images/mail-focus.svg');
+    border: 3px solid #FFC632;
+    outline: 0;
+}
+
+#user-password{
+    height: 60px;
+    width: auto;
+    padding:0px 2.65em;
+
+    border: 1px solid #ccc;
+
+    font-size: medium;
+    background-image: url('images/lock.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+#user-password:focus{
+    background-image: url('images//lock-focus.svg');
+    background-repeat: no-repeat;
+
+    border: 3px solid #FFC632;
+    outline: 0;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+.logo{
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 20%;
+}
+
+.right-side{
+    display: flex;
+    flex: 1;
+}
+
+.remember-div{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    color: #A9AFB9;
+}
+
+#forget-pass{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFC632;
+}
+
+
+.login-btn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    border: 0;
+
+    padding: 3% 5%;
+    background: #FFC632;
+}
+
+.login-btn:hover{
+    background: #e9bf55;
+
+}
+
+
+.register{
+    display: flex;
+    justify-content: center;
+    color: #FFC632;
+}
+
+.register a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFC632;
+}
+
+.remember-label{
+    display: flex;
+    gap: 10px;
+}
+
+#remember{
+    display: none;
+}
+
+#remember + label{
+    width: 20px;
+    height: 20px;
+    background-color: #A9AFB9;
+
+    display: block;
+    cursor: pointer;
+}
+
+
+#remember:checked + label{
+    background-image: url('images/check.svg');
+    background-color: #FFC632;
+    background-size: 20px;
+    background-position: center;
+}
+
+
+
