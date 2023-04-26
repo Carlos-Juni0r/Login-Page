@@ -1,24 +1,29 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    
 }
-
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: auto;  
-    height: 100vh;
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
     background-color: #191816;
     font-family: 'Roboto', sans-serif;
-    color: #AFB6C2
+    color: #AFB6C2;
+    box-sizing: border-box;
 }
 main{
     width: 100%;
     height: auto;
     display: flex;
+    box-sizing: border-box;
 }
 form{
     position: relative;
-    top: 15%;
+    top: 7%;
 }
 
 fieldset{
@@ -29,8 +34,9 @@ fieldset{
 
     padding-left: 20%;
     padding-right: 15%;
-    padding-bottom: 17%;
-
+    padding-bottom: 10%;
+    padding-top: 5%;
+    border-radius: 20px;
     border: none;
     background-color: #24221F;
 }
@@ -109,7 +115,17 @@ form fieldset label{
 .right-side{
     display: flex;
     flex: 1;
+    width: 100%;
+    height: auto;
+
 }
+
+.right-side img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .remember-div{
     font-family: 'Roboto', sans-serif;
@@ -135,6 +151,7 @@ form fieldset label{
 
     padding: 3% 5%;
     background: #FFC632;
+    color: black;
 }
 
 .login-btn:hover{
@@ -184,33 +201,81 @@ form fieldset label{
 
 
 @media screen and (max-width: 740px) {
+    body{
+     
+        margin: 0;
+        justify-content: center;
+        height: fit-content;
+        background-image: url('images/side-image.jpg');
+        background-repeat: no-repeat;
+    }
 
+    main{
+        width: 80%;
+        max-width: 740px;
+        margin: 0;
+    }
 
     .right-side{
         display: none;
+        
     }
 
     .left-side{
-        width: auto;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    fieldset h1{    
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .logo{
+        padding-top: 2%;
+        padding-left: 0;
+        width: 30%;
+    }
+
+    form{
+        width: auto;
+        height: auto;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
     }
 
     fieldset{
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-left: 15%;
-        
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;  
+        padding-bottom: 17%;
     }
+
 
     .remember-div{
         font-size: smaller;
     }
 
-    form{
-        top: 7%;
-        width: auto;
+    #user-email{
+        height: 50px;
+        padding:0px 0px 0px 2em ;
+        font-size: medium;
     }
+    
+    #user-password{
+        height: 50px;
+        padding:0px 0px 0px 2em ;
+        font-size: medium;
+    }
+
 
 }
 
